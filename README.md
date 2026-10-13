@@ -1,6 +1,6 @@
 # opencode-ultraplan
 
-> **Local replica of Anthropic's `/ultraplan`** — deep multi-agent planning with adversarial critique, built from the actual leaked source code (npm v2.1.88), the best of 6 open-source replicas, GitHub's spec-kit, and the superpowers methodology. Runs 100% locally. No cloud. No quota. No browser. No limits.
+> **Local replica of Anthropic's `/ultraplan`** — deep multi-agent planning with adversarial critique, built from the actual leaked source code (npm v2.1.88), the best of 6 open-source replicas, GitHub's spec-kit, and the superpowers methodology. Runs 100% locally (Remote PR only with explicit consent). No cloud quota. No browser. No arbitrary limits.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-5.2-green.svg)](CHANGELOG.md)
@@ -81,7 +81,7 @@ curl -fsSL https://raw.githubusercontent.com/rianprei/opencode-ultraplan/main/in
 /ultraplan migra o auth pra OAuth2
 /ultraplan refactor the payment module
 "refina com ultraplan"            (sobre um plano rascunho)
-/ultraplan                         (status)
+/ultraplan                         (usage help + verbos)
 /ultraplan revise 5: muda pra JWT  (regenera SÓ a seção 5)
 /ultraplan accept                  (contrato congelado → executa)
 /ultraplan salva                   (persiste .ultraplan/plan.md)
@@ -92,7 +92,7 @@ curl -fsSL https://raw.githubusercontent.com/rianprei/opencode-ultraplan/main/in
 
 | Feature | Anthropic's `/ultraplan` (dead) | This replica |
 |---|---|---|
-| Where it runs | Cloud CCR | **100% local** |
+| Where it runs | Cloud CCR | **100% local** (Remote PR only with consent) |
 | Frota | 3 explorers + 1 critic (cloud) | Same 3+1 (subagentes locais) |
 | Review | Browser, inline comments | Terminal, `revise <n>` |
 | Timeout | 30 min, destroys work | **None** |

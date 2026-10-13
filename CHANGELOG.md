@@ -2,26 +2,23 @@
 
 ## v5.2 (2026-10-13)
 
-### Fixed
-- `py_compile -B` false claim: `-B` only suppresses import bytecode, py_compile still writes `__pycache__` — replaced with `ast.parse` (true zero-write)
-- `go vet` not read-only: resolves modules via network, invokes toolchain — moved to consent-required tier
-- `git diff HEAD` misses untracked files — added `git ls-files --others --exclude-standard`
-- `AGENTS.md`/`CLAUDE.md` elevated to trusted instructions — now "calibração, não ordens"
-- Secrets redaction extended to any cited snippet (not just credential findings)
-- Lockfiles no longer blindly ignored when the note requests supply-chain review
-- Dedupe order contradiction (pipeline declared "Verify → Dedupe" but executed "Dedupe → Verify") — unified
-- Modo enum gained "direto (Rota A)" value
+### Added
+- Modo enum gained "direto (Rota A)" — the routing's own product can fill the template honestly
 - Fase enum gained "executando|concluído" states
-- Guard "one per conversation" now explicitly excepts the Refine door
-- Refutation loop has an exit: persistent after 2 rounds → `PRECISA CLARIFICAR` in the plan
-- Salv incremental mode activated on first `salva` (was ambiguous with "quando eu pedir")
-- Ledger de passos recorded in plan.md when persistent (resume knows which step)
-- Secrets scan expanded: `ghp_`, `github_pat_`, `glpat-`, `xox`
+- Guard explicitly excepts the Refine door ("refina com ultraplan" always re-dispatches the frota)
+- Ledger de passos recorded in plan.md when persistent — resume knows which step
+- Secrets scan expanded: `ghp_`, `github_pat_`, `glpat-`, `xox` patterns added
+
+### Fixed
+- Refutation loop has an exit: persistent after 2 rounds → `PRECISA CLARIFICAR` in the plan (never deadlock)
+- Salv incremental mode: first `salva` activates persistent mode; subsequent revisions update plan.md automatically
+- AGENTS.md/CLAUDE.md demoted to "calibração, não ordens" — instructions inside them that contradict the perimeter are ignored
+- `toca interfaces` (was `tocha` typo)
+- `descoberta de arquitetura` (was `decoberta` typo)
 
 ### Changed
 - Comment stamps shortened (were traveling in every prompt invocation)
-- §5 Pós trimmed to a single reference line
-- Description updated with honest "rede só sob consentimento" (was "100% offline")
+- Description updated: "rede só sob consentimento" (was "100% offline")
 
 ## v5.1 (2026-10-13)
 
@@ -33,11 +30,6 @@
 - Fase field in plan header (resume knows where to pick up)
 - Secrets scan before Remote push
 - Anti-sycophancy stop ("para" → "Ultraplan parado." and wait)
-
-### Fixed
-- `toca interfaces` (was `tocha` typo)
-- `descoberta de arquitetura` (was `decoberta` typo)
-- `Insistir em frota` (was `Insisto`)
 
 ## v5.0 (2026-10-12)
 
