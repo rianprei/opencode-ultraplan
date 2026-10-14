@@ -1,6 +1,6 @@
 ---
 name: ultraplan
-description: Use when the user asks for deep planning — "ultraplan", "plano profundo", "planeja antes de codar", or says "refina com ultraplan" about an existing plan — or wants multi-agent planning with adversarial critique and a refutation loop before any code is written. Local, network only with consent, no git required, unlimited, review section-by-section.
+description: "ultraplan v5.2 — Use when the user asks for deep planning — "ultraplan", "plano profundo", "planeja antes de codar", or says "refina com ultraplan" about an existing plan — or wants multi-agent planning with adversarial critique and a refutation loop before any code is written. Local, network only with consent, no git required, unlimited, review section-by-section.
 ---
 
 # MODO ULTRAPLAN
