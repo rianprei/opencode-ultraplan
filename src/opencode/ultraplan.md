@@ -43,7 +43,7 @@ Navegador/app e rede (`xdg-open`, `curl`, `gh`...): nunca — única exceção �
 
 ## 2. FIND — 3 exploradores em paralelo
 
-Num único bloco de chamadas paralelas:
+Num único bloco de chamadas paralelas. Se o runtime tiver agentes dedicados (`explorer-*`), prefira-os; senão, 1 subagente genérico por lente com o prompt da lente:
 
 - `explorer-codebase` — padrões, convenções, módulos relevantes **e caça a REUSO: funções/utilitários existentes que resolvem parte do objetivo — nunca propor código novo quando implementação adequada já existe**
 - `explorer-risks` — o que pode quebrar, dependências acopladas, armadilhas
