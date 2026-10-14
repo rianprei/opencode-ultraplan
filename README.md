@@ -1,6 +1,6 @@
 # opencode-ultraplan
 
-> **Local replica of Anthropic's `/ultraplan`** — deep multi-agent planning with adversarial critique, built from the actual leaked source code (npm v2.1.88), the best of 6 open-source replicas, GitHub's spec-kit, and the superpowers methodology. Runs 100% locally (Remote PR only with explicit consent). No cloud quota. No browser. No arbitrary limits.
+> **Local replica of Anthropic's `/ultraplan`** — deep multi-agent planning with adversarial critique, built from the actual leaked source code (npm v2.1.88 pre-release snapshot), the best of 6 open-source replicas, GitHub's spec-kit, and the superpowers methodology. Runs 100% locally (Remote PR only with explicit consent). No cloud quota. No browser. No arbitrary limits.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-5.2-green.svg)](CHANGELOG.md)
