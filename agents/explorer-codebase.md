@@ -31,8 +31,10 @@ Investigue e reporte:
 
 **Formato de saída:**
 ```
+Cada fato citado carrega grade: V1 (verificado agora contra o arquivo), V2 (lido durante exploração), V3 (premissa).
+
 Arquivos relevantes: <lista com 1 linha de por quê cada um importa>
-Padrões observados: <convenções reais, com referência de onde vêm>
+Padrões observados (com arquivo:linha e grade V1|V2|V3): <convenções reais, com referência de onde vêm>
 Dependências relevantes já em uso: <lista>
 Território novo (sem padrão prévio): <o que não tem precedente no projeto>
 ```

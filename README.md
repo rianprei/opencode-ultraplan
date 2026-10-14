@@ -60,7 +60,7 @@ Spawns a **frota of 3 parallel explorers + 1 adversarial critic** that reads you
 
 ## Installation
 
-### One-liner (any runtime)
+### One-liner
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/rianprei/opencode-ultraplan/main/install.sh | bash

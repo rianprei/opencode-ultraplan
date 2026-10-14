@@ -1,6 +1,6 @@
 ---
 name: ultraplan
-description: 'ultraplan v5.2 — Use when the user asks for a deep code review, deep planning, or autonomous goal loop — any mention of "ultraplan" triggers this skill. Local, network only with consent, no git required, unlimited.'
+description: 'ultraplan v5.2 — Use when the user asks for a deep implementation planning with complexity routing. Local, network only with consent, no git required, unlimited.'
 ---
 
 # MODO ULTRAPLAN
