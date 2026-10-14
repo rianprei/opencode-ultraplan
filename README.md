@@ -144,6 +144,13 @@ Built from:
 | `.ultraplan/plan.md` persists | Survives context compaction — the original lost work on timeout |
 | Complexity routing | youzaiASI: simple tasks don't pay for a fleet; architectural ones get extra armor |
 
+## Verify integrity
+
+After downloading, verify the files match the published checksums:
+
+```bash
+sha256sum -c CHECKSUMS.sha256
+```
 ## License
 
 MIT — see [LICENSE](LICENSE)
